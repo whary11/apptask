@@ -5,7 +5,7 @@
       <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Crear
         tarea</button>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" v-if="tasks.length >0">
       <ul class="list-group">
         <li class="list-group-item active bg-danger">
           <h2>Tareas</h2>
