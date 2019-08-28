@@ -75,6 +75,10 @@
             .then(function (docRef) {
               console.log("Document written with ID: ", docRef.id);
               $('#exampleModal').modal('hide')
+              this.newTask = {
+                name: '',
+                description: ''
+              }
             })
             .catch(function (error) {
               console.error("Error adding document: ", error);
@@ -103,7 +107,7 @@
             //...
           });
       },
-      hideModal(){
+      hideModal() {
         $('#exampleModal').modal('hide')
       }
     },
